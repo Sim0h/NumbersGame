@@ -62,10 +62,7 @@
             }
             while (spela == false)
             {
-                Start3:
-                try
-                {
-                    
+                                                                    
                     Console.WriteLine("Vill  du spela igen? Skriv Ja eller Nej");
                     string replay = Console.ReadLine().ToLower();
 
@@ -77,22 +74,20 @@
                             goto Start;
 
 
-                        default:
+                        case "nej":
 
                             Console.WriteLine("Ha en trevlig dag!");
                             Console.ReadKey();
                             Environment.Exit(0);
                             break;
+
+                        default:
+                            Console.Clear();
+                            Console.WriteLine("Vänligen skriv Ja eller Nej");
+                            break;
+
                     }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Vänligen skriv Ja eller Nej");
-                    goto Start3;
-                }
-
-
-
+                                                
             }
         }
     }
