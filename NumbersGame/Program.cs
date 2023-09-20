@@ -20,7 +20,7 @@
 
             while (spela == true)
             {
-            Start1:
+            Game:
                 try
                 {
 
@@ -56,39 +56,40 @@
                 catch (Exception e)
                 {
                     Console.WriteLine("Vänligen skriv en siffra mellan 1 och 20.");
-                    goto Start1;
+                    goto Game;
                 }
 
             }
             while (spela == false)
             {
-                                                                    
-                    Console.WriteLine("Vill  du spela igen? Skriv Ja eller Nej");
-                    string replay = Console.ReadLine().ToLower();
+
+                Console.WriteLine("Vill  du spela igen? Skriv Ja eller Nej");
+                string replay = Console.ReadLine().ToLower();
 
 
-                    switch (replay)
-                    {
-                        case "ja":
-                            Console.Clear();
-                            goto Start;
+                switch (replay)
+                {
+                    case "ja":
+                        Console.Clear();
+                        goto Start;
 
 
-                        case "nej":
+                    case "nej":
 
-                            Console.WriteLine("Ha en trevlig dag!");
-                            Console.ReadKey();
-                            Environment.Exit(0);
-                            break;
+                        Console.WriteLine("Ha en trevlig dag!");
+                        Console.ReadKey();
+                        Environment.Exit(0);
+                        break;
 
-                        default:
-                            Console.Clear();
-                            Console.WriteLine("Vänligen skriv Ja eller Nej");
-                            break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Vänligen skriv Ja eller Nej");
+                        break;
 
-                    }
-                                                
+                }
+
             }
         }
+
     }
 }
