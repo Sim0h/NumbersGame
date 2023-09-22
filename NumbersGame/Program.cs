@@ -15,7 +15,7 @@
             int numguess = 0;
             Random random = new Random();
             int Correctnum = random.Next(1, 20);
-            Console.WriteLine("jag tänker på ett nummer mellan 1 och 20. Du får 5 försök att gissa rätt!");
+            Console.WriteLine("Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök");
             bool spela = true;
 
             while (spela == true)
